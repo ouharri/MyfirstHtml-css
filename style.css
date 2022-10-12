@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial Narrow;
+    background-color: #e9e3d6;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    position: fix;
+    display: block;
+    /* text-align: center; */
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
+    padding: 3px;
+    left: 0px;
+    top: 0px;
+    background-color: #FAF7F7;
+}
+svg{
+    padding: 0;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 3px;
+}
+nav ul li a{
+    display:flex;
+    color: #151D53;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+nav ul img{
+    margin: -3px;
+    margin-left: 20px;
+    padding: 0px;
+}
+nav ul li a:hover{
+    color: #FFC900;
+}
+footer {
+    position: fixed;
+    position: sticky;
+    display: block;
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+    
+  }
+.checkbtn{
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label img{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position:fixed;
+        width:100%;
+        height:100vh;
+        background:#e8e4d8;
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
+        top: 80px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 15px 40%;
+        line-height: 80px;
+    }
+    nav ul img{
+        display:none;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #FFC900; 
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+.landing-page{
+    padding: 10%;
+    position: sticky;
+    display: block;
+    text-align:justify;
+    /* background-color: DarkSalmon; */
+    color: #4d537d;
+}
+
+div video{
+    background-origin: padding-box;
+    margin-top: -150px;
+    margin-right: -100px;
+    height: 500px;
+    float: right;
+    box-shadow: #151D53;
+}
